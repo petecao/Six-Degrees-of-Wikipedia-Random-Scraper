@@ -1,11 +1,9 @@
 import scraper
 import warnings
+import wikipedia
 
 warnings.filterwarnings('ignore')
-i = 0
 try:
-	scraper.getUrl((scraper.search("Center High School"))[i])
-except Exception:
-	print(scraper.getUrl((scraper.search("Center High School"))[i+1]))
-with warnings.catch_warnings():
-	warnings.simplefilter("ignore")
+	scraper.getUrl((scraper.search("Center High School"))[0])
+except wikipedia.exceptions.DisambiguationError:
+	print(scraper.getUrl((scraper.search("Center High School"))[1]))
