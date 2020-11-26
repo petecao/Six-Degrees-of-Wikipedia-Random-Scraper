@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <interface version="1.0">
   <object class="ttk.Frame" id="frame_1">
+    <property name="cursor">arrow</property>
     <property name="height">400</property>
     <property name="relief">flat</property>
     <property name="width">400</property>
@@ -61,6 +62,30 @@
           <property name="row">2</property>
           <property name="sticky">s</property>
         </layout>
+        <child>
+          <object class="ttk.Treeview.Column" id="column_1">
+            <property name="column_anchor">w</property>
+            <property name="heading_anchor">w</property>
+            <property name="minwidth">20</property>
+            <property name="stretch">true</property>
+            <property name="text" translatable="yes">Wiki Page Title</property>
+            <property name="tree_column">false</property>
+            <property name="visible">true</property>
+            <property name="width">100</property>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Treeview.Column" id="column_2">
+            <property name="column_anchor">w</property>
+            <property name="heading_anchor">w</property>
+            <property name="minwidth">20</property>
+            <property name="stretch">true</property>
+            <property name="text" translatable="yes">Link</property>
+            <property name="tree_column">false</property>
+            <property name="visible">true</property>
+            <property name="width">200</property>
+          </object>
+        </child>
       </object>
     </child>
     <child>
