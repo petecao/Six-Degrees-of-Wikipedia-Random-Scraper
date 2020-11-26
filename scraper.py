@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import random
 import wikipedia
-import html5lib
 import warnings
 import time
 
@@ -21,7 +20,10 @@ def scrapeSite(url):
 	
 	title = soup.find(id="firstHeading")
 
-	print(title.text)
+	try:
+		print(title.text)
+	except UnicodeEncodeError:
+		return
 
 	allLinks = soup.find(id="bodyContent").find_all("a")
 	random.shuffle(allLinks)
