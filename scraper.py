@@ -20,6 +20,7 @@ def scrapeSite(url):
 		'html.parser')
 	
 	title = soup.find(id="firstHeading")
+
 	print(title.text)
 
 	allLinks = soup.find(id="bodyContent").find_all("a")
@@ -41,7 +42,7 @@ def scrapeSite(url):
 		scrapeSite("https://en.wikipedia.org" + linkToScrape['href'])
 	except TypeError: 
 		return
-		
+
 def search(search):
 	return wikipedia.search(search)
 
