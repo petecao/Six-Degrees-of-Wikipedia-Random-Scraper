@@ -70,6 +70,14 @@ version = "2.10"
 
 [[package]]
 category = "main"
+description = "A tkinter GUI builder."
+name = "pygubu"
+optional = false
+python-versions = "*"
+version = "0.10.3"
+
+[[package]]
+category = "main"
 description = "Python HTTP for Humans."
 name = "requests"
 optional = false
@@ -137,7 +145,7 @@ beautifulsoup4 = "*"
 requests = ">=2.0.0,<3.0.0"
 
 [metadata]
-content-hash = "ed65da48f7587d78171fdb82505fc4cae58931ab098456e6d879dd704fbbae0e"
+content-hash = "9138c48ac93e2e12fce74d26ef98ff5c86d4d1b0dada94989cbabab8c98fb886"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -164,6 +172,10 @@ html5lib = [
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
     {file = "idna-2.10.tar.gz", hash = "sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"},
+]
+pygubu = [
+    {file = "pygubu-0.10.3-py3-none-any.whl", hash = "sha256:fcee1873208818b808aeb49bc973e01286e566338586131bdd2dd9c799ac7675"},
+    {file = "pygubu-0.10.3.tar.gz", hash = "sha256:33b4f5dca42ee014741d64523f5e1c4a9b838af71d6bbbbfb51615dbb1ad9132"},
 ]
 requests = [
     {file = "requests-2.25.0-py2.py3-none-any.whl", hash = "sha256:e786fa28d8c9154e6a4de5d46a1d921b8749f8b74e28bde23768e5e16eece998"},

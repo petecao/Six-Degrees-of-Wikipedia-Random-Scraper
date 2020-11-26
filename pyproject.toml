@@ -9,6 +9,7 @@ python = "^3.8"
 bs4 = "^0.0.1"
 wikipedia = "^1.4.0"
 html5lib = "^1.1"
+pygubu = "^0.10.3"
 
 [tool.poetry.dev-dependencies]
 
