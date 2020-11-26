@@ -65,6 +65,7 @@
     </child>
     <child>
       <object class="ttk.Button" id="button_1">
+        <property name="command">on_click</property>
         <property name="text" translatable="yes">Search!</property>
         <layout manager="grid">
           <property name="column">2</property>
